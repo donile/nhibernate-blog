@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Blog" namespace="Mark.Donile.Blog">
+
+    <class name="PostTag" table="PostTags" >
+        <id name="Id" column="Id" />
+        <property name="TagValue" type="AnsiString" length="256" />
+        <!-- <set name="BlogPosts" table="BlogPosts_PostTags" inverse="true">
+            <key>
+                <column name="PostTagId" />
+            </key>
+            <many-to-many class="BlogPost" >
+                <column name="BlogPostId" />
+            </many-to-many>
+        </set> -->
+    </class>
+
+</hibernate-mapping>
